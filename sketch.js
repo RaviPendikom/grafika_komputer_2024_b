@@ -1,16 +1,17 @@
 let x = 300;
 let y = 300;
-let speedX = 5;
-let speedY = 3;
+let speedX = 6;
+let speedY = 10;
 
 function setup() {
   createCanvas(600, 600);
+  background(78, 19, 187);
 }
 
 function draw() {
-  background(78, 19, 187);
   noStroke();
-  circle(x, y, 100);
+  fill(random(255), random(255), random(255), random(255));
+  circle(x, y, random(100));
   x += speedX;
   y += speedY;
   if (x + 50 >= width || x - 50 <= 0) {
