@@ -6,7 +6,6 @@ function setup() {
 }
 
 function draw() {
-  // fill(222, 90, 190, 200);
-  rectMode(CENTER);
-  square(mouseX, mouseY, 100);
+  stroke(random(255), random(255), random(255));
+  line(300, 300, mouseX, mouseY);
 }
