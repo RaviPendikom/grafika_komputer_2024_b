@@ -6,6 +6,9 @@ function setup() {
 }
 
 function draw() {
-  stroke(random(255), random(255), random(255));
-  line(300, 300, mouseX, mouseY);
+  noStroke();
+  circle(mouseX, mouseY, 10);
+  if (mouseIsPressed) {
+    background(78, 19, 187);
+  }
 }
