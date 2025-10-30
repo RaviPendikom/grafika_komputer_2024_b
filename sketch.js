@@ -1,14 +1,14 @@
-// User defined variable
-// EVENT
+size = 10;
+
 function setup() {
   createCanvas(600, 600);
   background(78, 19, 187);
 }
 
 function draw() {
-  noStroke();
-  circle(mouseX, mouseY, 10);
+  fill(random(255), random(255), random(255));
+  circle(mouseX, mouseY, size);
   if (mouseIsPressed) {
-    background(78, 19, 187);
+    size += 2;
   }
 }
